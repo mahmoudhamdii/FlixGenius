@@ -8,22 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		369951AC2A330AF800572E12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369951AB2A330AF800572E12 /* AppDelegate.swift */; };
-		369951AE2A330AF800572E12 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369951AD2A330AF800572E12 /* SceneDelegate.swift */; };
-		369951B02A330AF800572E12 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369951AF2A330AF800572E12 /* ViewController.swift */; };
-		369951B32A330AF800572E12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 369951B12A330AF800572E12 /* Main.storyboard */; };
 		369951B52A330AFB00572E12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 369951B42A330AFB00572E12 /* Assets.xcassets */; };
 		369951B82A330AFB00572E12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 369951B62A330AFB00572E12 /* LaunchScreen.storyboard */; };
+		369951C22A330EF500572E12 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369951C02A330EF500572E12 /* MainViewController.swift */; };
+		369951C32A330EF500572E12 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 369951C12A330EF500572E12 /* MainViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		369951A82A330AF800572E12 /* FlixGenius.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlixGenius.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		369951AB2A330AF800572E12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		369951AD2A330AF800572E12 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		369951AF2A330AF800572E12 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		369951B22A330AF800572E12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		369951B42A330AFB00572E12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		369951B72A330AFB00572E12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		369951B92A330AFB00572E12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		369951C02A330EF500572E12 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		369951C12A330EF500572E12 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +54,78 @@
 		369951AA2A330AF800572E12 /* FlixGenius */ = {
 			isa = PBXGroup;
 			children = (
+				369951C92A33494000572E12 /* Networking */,
+				369951C82A3348F900572E12 /* Extensions */,
+				369951C42A3348A800572E12 /* View */,
+				369951C52A3348B300572E12 /* ViewModel */,
+				369951C72A3348E300572E12 /* Model */,
+				369951C62A3348BB00572E12 /* Controllers */,
+				369951CA2A33497300572E12 /* Resourses */,
 				369951AB2A330AF800572E12 /* AppDelegate.swift */,
-				369951AD2A330AF800572E12 /* SceneDelegate.swift */,
-				369951AF2A330AF800572E12 /* ViewController.swift */,
-				369951B12A330AF800572E12 /* Main.storyboard */,
-				369951B42A330AFB00572E12 /* Assets.xcassets */,
-				369951B62A330AFB00572E12 /* LaunchScreen.storyboard */,
 				369951B92A330AFB00572E12 /* Info.plist */,
 			);
 			path = FlixGenius;
+			sourceTree = "<group>";
+		};
+		369951BF2A330EBD00572E12 /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				369951C02A330EF500572E12 /* MainViewController.swift */,
+				369951C12A330EF500572E12 /* MainViewController.xib */,
+			);
+			path = MainViewController;
+			sourceTree = "<group>";
+		};
+		369951C42A3348A800572E12 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				369951B62A330AFB00572E12 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		369951C52A3348B300572E12 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		369951C62A3348BB00572E12 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				369951BF2A330EBD00572E12 /* MainViewController */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		369951C72A3348E300572E12 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		369951C82A3348F900572E12 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		369951C92A33494000572E12 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		369951CA2A33497300572E12 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				369951B42A330AFB00572E12 /* Assets.xcassets */,
+			);
+			path = Resourses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,8 +187,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				369951B82A330AFB00572E12 /* LaunchScreen.storyboard in Resources */,
+				369951C32A330EF500572E12 /* MainViewController.xib in Resources */,
 				369951B52A330AFB00572E12 /* Assets.xcassets in Resources */,
-				369951B32A330AF800572E12 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +199,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				369951B02A330AF800572E12 /* ViewController.swift in Sources */,
 				369951AC2A330AF800572E12 /* AppDelegate.swift in Sources */,
-				369951AE2A330AF800572E12 /* SceneDelegate.swift in Sources */,
+				369951C22A330EF500572E12 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		369951B12A330AF800572E12 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				369951B22A330AF800572E12 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		369951B62A330AFB00572E12 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -216,7 +268,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +322,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -292,9 +344,10 @@
 				INFOPLIST_FILE = FlixGenius/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -320,9 +373,10 @@
 				INFOPLIST_FILE = FlixGenius/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
